@@ -1,49 +1,341 @@
 ---
-import BaseHead from '../components/BaseHead.astro';
-import Footer from '../components/Footer.astro';
-import Header from '../components/Header.astro';
-import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
+import { Image } from 'astro:assets';
+import Layout from '../layouts/Page.astro';
+import profileImage from '../assets/reed-iredale.webp';
 ---
 
-<!doctype html>
-<html lang="en">
-	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-	</head>
-	<body>
-		<Header />
-		<main>
-			<h1>🧑‍🚀 Hello, Astronaut!</h1>
-			<p>
-				Welcome to the official <a href="https://astro.build/">Astro</a> blog starter template. This template
-				serves as a lightweight, minimally-styled starting point for anyone looking to build a personal
-				website, blog, or portfolio with Astro.
-			</p>
-			<p>
-				This template comes with a few integrations already configured in your
-				<code>astro.config.mjs</code> file. You can customize your setup with
-				<a href="https://astro.build/integrations">Astro Integrations</a> to add tools like Tailwind,
-				React, or Vue to your project.
-			</p>
-			<p>Here are a few ideas on how to get started with the template:</p>
-			<ul>
-				<li>Edit this page in <code>src/pages/index.astro</code></li>
-				<li>Edit the site header items in <code>src/components/Header.astro</code></li>
-				<li>Add your name to the footer in <code>src/components/Footer.astro</code></li>
-				<li>Check out the included blog posts in <code>src/content/blog/</code></li>
-				<li>Customize the blog post page layout in <code>src/layouts/BlogPost.astro</code></li>
-			</ul>
-			<p>
-				Have fun! If you get stuck, remember to
-				<a href="https://docs.astro.build/">read the docs</a>
-				or <a href="https://astro.build/chat">join us on Discord</a> to ask questions.
-			</p>
-			<p>
-				Looking for a blog template with a bit more personality? Check out
-				<a href="https://github.com/Charca/astro-blog-template">astro-blog-template</a>
-				by <a href="https://twitter.com/Charca">Maxi Ferreira</a>.
-			</p>
-		</main>
-		<Footer />
-	</body>
-</html>
+<Layout
+	title="Conversion Rate Optimisation Expert"
+	description="Helping Australian e-commerce brands turn more visitors into customers through data-driven CRO strategies, behavioural psychology, and full-stack implementation"
+	pubDate={new Date('December 14 2025')}
+>
+	<p>
+		Helping Australian e-commerce brands turn more visitors into customers through data-driven CRO strategies, behavioural psychology, and full-stack implementation.
+	</p>
+
+	<Image
+		src={profileImage}
+		alt="Reed Iredale - Conversion Rate Optimisation Expert and CRO Consultant based in Brisbane, Australia"
+		style="max-width: 220px; display: block; margin: 0 auto;"
+	/>
+
+	<h2>What's the Cost of Doing Nothing?</h2>
+
+	<p>
+		Your site gets 50,000 visitors/month at a 2% conversion rate. That's $1.8M/year. <strong>Improve to 4%? That's $3.6M/year. Same traffic. Double the revenue.</strong>
+	</p>
+
+	<p>
+		Most brands leave $1.8M+ on the table annually by accepting mediocre conversion rates. I fix that.
+	</p>
+
+	<p><strong>Trusted by Leading Australian Brands</strong></p>
+
+	<p>
+		BHP, Ladbrokes, Oscar Wylee, Australian Retirement Trust, First Mac, loans.com.au, JB Racks, Petzyo, and 200+ other growth-focused e-commerce and internet companies across Australia, US, and Europe markets.
+	</p>
+
+	<h2>Fix Your Leaky Sales Funnel</h2>
+
+	<p>
+		<strong>Most e-commerce brands waste 95-98.5% of their paid traffic</strong>. I use conversion copywriting, UX design, behavioural science principles, and data analytics to plug those leaks and turn browsers into buyers. This is <strong>Full-stack CRO:</strong>
+	</p>
+
+	<ul>
+		<li><strong>Strategic Analysis</strong> – Identifies conversion bottlenecks using heatmaps, session recordings, and analytics</li>
+		<li><strong>Hands-On Implementation</strong> – Builds and deploys tests without waiting on developers</li>
+		<li><strong>Business Growth Focus</strong> – Optimises for revenue, not just conversion rate vanity metrics</li>
+		<li><strong>Clear Communication</strong> – Explains complex data insights in plain English for stakeholders</li>
+	</ul>
+
+	<hr />
+
+	<h2>Proven CRO Results That Move the Needle</h2>
+
+	<h3>E-commerce Growth</h3>
+
+	<p>
+		<strong>Increased conversion rate</strong> for a vertical bike rack company, contributing revenue growth monthly revenue through systematic funnel optimisation, mobile UX improvements, and cart abandonment recovery.
+	</p>
+
+	<p>
+		<strong>Black Friday Campaign Excellence:</strong> Implemented data-driven design with rapid A/B testing for successful seasonal campaigns in the outdoor DTC space, optimising promotional email flows, cart recovery sequences, and high-traffic landing pages.
+	</p>
+
+	<h3>Superannuation Merger Conversion Rate</h3>
+
+	<p>
+		<strong>Maintained acquisition conversion rates</strong> during the merger of two state-based super funds into a national player, ensuring seamless user experience across multiple stakeholder groups and regulatory requirements.
+	</p>
+
+	<h3>Financial Services Scale</h3>
+
+	<p>
+		<strong>Provided confidence to triple advertising spend</strong> for a consumer finance company preparing for potential mortgage market volatility through rigorous conversion tracking and landing page optimisation for mortgage products.
+	</p>
+
+	<hr />
+
+	<h2>What is Conversion Rate Optimisation (CRO)?</h2>
+
+	<p>
+		Conversion Rate Optimisation is the systematic process of increasing the percentage of website visitors who complete a desired action - whether that's making a purchase, filling out a form, signing up for a newsletter, or requesting a quote. Unlike traditional marketing that focuses on driving more traffic, CRO maximizes the value of the visitors you already have.
+	</p>
+
+	<h3>The Full-Stack CRO Approach</h3>
+
+	<p>
+		Most CRO consultants stop at recommendations. I implement changes across the entire conversion funnel:
+	</p>
+
+	<h4>Research & Analysis</h4>
+
+	<ul>
+		<li>Heatmap analysis (Microsoft Clarity, Hotjar)</li>
+		<li>Session recording review</li>
+		<li>Google Analytics 4 funnel analysis</li>
+		<li>User feedback and surveys</li>
+		<li>Competitive benchmarking</li>
+		<li>Mobile vs desktop behaviour patterns</li>
+	</ul>
+
+	<h4>Hypothesis Development</h4>
+
+	<ul>
+		<li>Behavioural psychology principles</li>
+		<li>Friction point identification</li>
+		<li>Persuasion architecture</li>
+		<li>Social proof optimisation</li>
+		<li>Cognitive load reduction</li>
+		<li>Trust signal placement</li>
+	</ul>
+
+	<h4>Implementation & Testing</h4>
+
+	<ul>
+		<li>A/B and multivariate testing</li>
+		<li>Shopify theme customisation</li>
+		<li>Landing page optimisation</li>
+		<li>Conversion copywriting</li>
+		<li>UX/UI improvements</li>
+		<li>Email automation sequences (Klaviyo)</li>
+	</ul>
+
+	<hr />
+
+	<h2>CRO Services & Expertise</h2>
+
+	<h3>E-commerce Conversion Optimisation</h3>
+
+	<p>
+		Specialised in Shopify and WooCommerce platforms. I optimise product pages, checkout flows, cart abandonment sequences, and mobile experiences to reduce friction and increase average order value. Experience across Australian, US, and European markets with multi-currency and localisation considerations.
+	</p>
+
+	<h3>Landing Page Optimisation</h3>
+
+	<p>
+		Data-driven landing page design and testing for paid traffic campaigns. Focus on message-match between ads and landing pages, above-the-fold optimisation, form completion rates, and mobile-first responsive design that converts across devices.
+	</p>
+
+	<h3>Email Marketing & Automation</h3>
+
+	<p>
+		Advanced Klaviyo email flows including abandoned cart recovery, browse abandonment, post-purchase upsells, win-back campaigns, and customer segmentation strategies. Proven experience increasing email-attributed revenue through behavioral triggers and personalisation.
+	</p>
+
+	<h3>Analytics & Attribution</h3>
+
+	<p>
+		Comprehensive marketing attribution modelling integrating Shopify, Facebook Ads, Google Ads, Klaviyo, and other platforms. Build custom dashboards for conversion tracking, funnel visualization, and ROI measurement across the customer journey.
+	</p>
+
+	<h3>Technical CRO Implementation</h3>
+
+	<p>
+		Hands-on technical skills with JavaScript (React and Vue), Shopify Liquid, PHP and Laravel. Can implement changes directly without developer bottlenecks, including custom tracking, third-party app integration troubleshooting, and performance optimisation.
+	</p>
+
+	<hr />
+
+	<h2>Industry Experience & Background</h2>
+
+	<p>
+		With a foundation in data science and performance marketing, I've worked across multiple industries optimising conversion funnels for different business models:
+	</p>
+
+	<ul>
+		<li><strong>E-commerce & DTC:</strong> Vertical bike racks, pet products, outdoor gear, eyewear retail</li>
+		<li><strong>Financial Services:</strong> Consumer finance, mortgage products, superannuation (retirement savings)</li>
+		<li><strong>Consulting:</strong> Enterprise CRO projects for ASX-listed companies including BHP</li>
+		<li><strong>Gambling & Entertainment:</strong> Conversion optimisation for regulated betting platforms</li>
+	</ul>
+
+	<p>
+		Currently serving as <strong>CRO & E-commerce Manager at JB Racks</strong>, where I've helped driven revenue growth through systematic conversion rate improvements, mobile optimisation, and sophisticated email marketing automation.
+	</p>
+
+	<hr />
+
+	<h2>Why Conversion Rate Optimisation Matters for Your Business</h2>
+
+	<p>
+		Consider this: If you're spending $50,000 per month on Google Ads and Facebook Ads to drive 10,000 visitors to your site, and you're converting at 2%, you're getting 200 customers. Improving your conversion rate to 4% doubles your customers to 400 - without spending an extra dollar on advertising.
+	</p>
+
+	<p>
+		<strong>The math is simple:</strong> CRO provides better ROI than almost any other marketing investment because it multiplies the effectiveness of all your existing traffic sources. Every percentage point improvement in conversion rate flows directly to your bottom line.
+	</p>
+
+	<h3>Common Conversion Killers I Fix</h3>
+
+	<ul>
+		<li>Slow page load times causing visitor drop-off</li>
+		<li>Confusing navigation and unclear value propositions</li>
+		<li>Friction-filled checkout processes with too many form fields</li>
+		<li>Poor mobile experience with unresponsive design</li>
+		<li>Missing trust signals and social proof</li>
+		<li>Weak calls-to-action and persuasive copy</li>
+		<li>Cart abandonment without recovery sequences</li>
+		<li>Product pages that fail to address objections</li>
+		<li>Technical errors and broken user flows</li>
+	</ul>
+
+	<hr />
+
+	<h2>My CRO Process: From Audit to Optimisation</h2>
+
+	<h3>1. Discovery & Audit</h3>
+
+	<p>
+		Comprehensive analysis of your current conversion funnel using analytics data, heatmaps, session recordings, and user testing. Identify the biggest opportunities for improvement based on traffic volume and revenue impact.
+	</p>
+
+	<h3>2. Hypothesis Development</h3>
+
+	<p>
+		Create prioritised testing roadmap based on potential impact, implementation effort, and statistical confidence required. Apply behavioral psychology principles and industry best practices.
+	</p>
+
+	<h3>3. Testing & Implementation</h3>
+
+	<p>
+		Build and launch A/B tests with proper statistical significance. Implement winning variations and iterate based on learnings. Document results and insights for continuous improvement.
+	</p>
+
+	<hr />
+
+	<h2>Brisbane-Based CRO Consultant</h2>
+
+	<p>
+		Based in The Gap, Brisbane, Queensland, Australia.
+	</p>
+
+	<p>
+		<strong>Current availability:</strong> Fully booked in primary CRO role until 2028. Limited availability for speaking engagements, workshops, or strategic advisory for established e-commerce brands looking for expert guidance on specific conversion challenges.
+	</p>
+
+	<hr />
+
+	<h2>CRO Tools & Platforms I Use</h2>
+
+	<p>
+		Conversion rate optimisation requires the right technology stack. Here are the platforms and tools I work with regularly:
+	</p>
+
+	<ul>
+		<li><strong>AI:</strong> MCP Servers, Shopify AI, N8N</li>
+		<li><strong>Data & Analytics:</strong> Python Scripts, Google Analytics 4, Microsoft Clarity, Facebook Analytics, custom dashboards</li>
+		<li><strong>E-commerce Platforms:</strong> Shopify, WooCommerce, BigCommerce, blah blah whatever else you have</li>
+		<li><strong>Email Marketing:</strong> Klaviyo, Omnisend, Kit</li>
+		<li><strong>Testing:</strong> Convert, StatSig, LaunchDarkly, Visually, Optimizely...Sometimes I just hand roll my own.</li>
+		<li><strong>Heatmaps & Recordings:</strong> Microsoft Clarity, Hotjar, Lucky Orange</li>
+		<li><strong>Development:</strong> Frontend, HTML/CSS/JavaScript, Shopify Liquid, Laravel</li>
+		<li><strong>Advertising Platforms:</strong> Facebook Ads Manager, Google Ads, integration and tracking</li>
+	</ul>
+
+	<hr />
+
+	<h2>CRO Insights & Resources</h2>
+
+	<p>
+		I believe in sharing knowledge openly. Through case studies, methodology breakdowns, and practical CRO tips, I help the broader marketing community improve their conversion rates. Check out my latest thinking on conversion optimisation, behavioural psychology in marketing, and data-driven growth strategies.
+	</p>
+
+	<p>
+		<strong>Topics I cover:</strong> Shopify conversion optimisation, email marketing automation, mobile e-commerce best practices, Black Friday campaign strategies, funnel analytics, A/B testing methodologies, and behavioural science applications in digital marketing.
+	</p>
+
+	<hr />
+
+	<h2>Frequently Asked Questions About CRO</h2>
+
+	<h3>What's the difference between CRO and traditional digital marketing?</h3>
+
+	<p>
+		Traditional digital marketing focuses on driving more traffic to your website through SEO, PPC, social media, and content marketing. CRO focuses on converting the traffic you already have into customers. Both are important, but CRO typically offers better ROI because it improves the performance of all your existing marketing channels.
+	</p>
+
+	<h3>How long does it take to see results from CRO?</h3>
+
+	<p>
+		Quick wins can happen within weeks (fixing obvious friction points, improving page speed, adding trust signals). However, meaningful, sustainable conversion rate improvements typically take 3-6 months of systematic testing and optimisation. The timeline depends on your traffic volume, test velocity, and baseline conversion rate.
+	</p>
+
+	<h3>What conversion rate should I expect for my e-commerce store?</h3>
+
+	<p>
+		E-commerce conversion rates vary widely by industry, average order value, and traffic source. Generally, 2-3% is average for e-commerce, 3-5% is good, and 5%+ is excellent. However, context matters - high-ticket items naturally convert lower than impulse purchases. Focus on improving YOUR conversion rate, not hitting an arbitrary benchmark.
+	</p>
+
+	<h3>Do you work with Shopify stores?</h3>
+
+	<p>
+		Yes, Shopify is one of my primary platforms. I have extensive experience with Shopify theme customisation, app integration, conversion tracking setup, and Shopify-specific optimisation techniques for product pages, collections, and checkout flows.
+	</p>
+
+	<h3>What makes your CRO approach different?</h3>
+
+	<p>
+		Most CRO consultants deliver audit reports and recommendations, then leave implementation to your team. I'm a full-stack CRO specialist - I can analyse, strategise, AND implement changes myself. This means faster iteration, better communication between strategy and execution, and no bottlenecks waiting for developer availability.
+	</p>
+
+	<hr />
+
+	<h2>Ready to Turn More Visitors Into Customers?</h2>
+
+	<p>
+		While I'm currently fully booked in my primary role, I'm selective about strategic advisory projects and speaking opportunities. If you're an established e-commerce brand facing specific conversion challenges, let's talk.
+	</p>
+
+	<h3>Got Conversion Problems?</h3>
+
+	<p>
+		I use marketing experiments, conversion copywriting, UX design, and behavioural science to win. Whether you need help with cart abandonment, landing page optimisation, or email flow improvement, I can help diagnose the issue.
+	</p>
+
+	<p><a href="/contact">Contact me →</a></p>
+
+	<h3>Ask Reed</h3>
+
+	<p>
+		I answer CRO questions publicly to stay sharp and help the community. Best questions about conversion optimisation, analytics, and growth strategy get detailed responses. Email your toughest conversion challenge.
+	</p>
+
+	<p><a href="/contact">Email question →</a></p>
+
+	<h3>Speaking & Workshops</h3>
+
+	<p>
+		Available for podcast interviews, conference talks, and in-house workshops on conversion rate optimisation, e-commerce growth strategies, and data-driven marketing. I speak plainly about what works (and what doesn't).
+	</p>
+
+	<p><a href="/contact">Learn more →</a></p>
+
+	<hr />
+
+	<h2>Conversion Rate Optimisation That Drives Real Business Growth</h2>
+
+	<p>
+		Trusted by leading Australian brands for CRO consulting, e-commerce optimisation, and conversion-focused growth strategies. From Brisbane to businesses worldwide.
+	</p>
+</Layout>
