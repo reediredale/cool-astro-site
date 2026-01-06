@@ -49,13 +49,36 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 			}
 			.title {
 				margin-bottom: 1em;
-				padding: 1em 0;
+				padding: 1em;
 				text-align: center;
 				line-height: 1;
+				max-width: 1040px;
+				margin-left: auto;
+				margin-right: auto;
+				box-sizing: border-box;
+			}
+			/* Utility classes for wider content */
+			.prose-wide {
+				max-width: 1040px !important;
+			}
+			.prose-full {
+				max-width: 100% !important;
+				padding-left: 2em;
+				padding-right: 2em;
 			}
 			.title h1 {
 				margin: 0 0 0.5em 0;
 				word-wrap: break-word;
+				font-size: 2.85em;
+				line-height: 1.1;
+			}
+			@media (max-width: 720px) {
+				.title {
+					padding: 1em 0.75em;
+				}
+				.title h1 {
+					font-size: 2em;
+				}
 			}
 			.date {
 				margin-bottom: 0.5em;
@@ -79,21 +102,21 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 				<div class="hero-image">
 					{heroImage && <Image width={1020} height={510} src={heroImage} alt="" />}
 				</div>
-				<div class="prose">
-					<div class="title">
-						<div class="date">
-							<FormattedDate date={pubDate} />
-							{
-								updatedDate && (
-									<div class="last-updated-on">
-										Last updated on <FormattedDate date={updatedDate} />
-									</div>
-								)
-							}
-						</div>
-						<h1>{title}</h1>
-						<hr />
+				<div class="title">
+					<div class="date">
+						<FormattedDate date={pubDate} />
+						{
+							updatedDate && (
+								<div class="last-updated-on">
+									Last updated on <FormattedDate date={updatedDate} />
+								</div>
+							)
+						}
 					</div>
+					<h1>{title}</h1>
+					<hr />
+				</div>
+				<div class="prose">
 					<slot />
 				</div>
 			</article>

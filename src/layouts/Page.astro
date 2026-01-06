@@ -37,7 +37,7 @@ const { title, description, heroImage } = Astro.props;
 			}
 			.prose {
 				width: 100%;
-				max-width: 720px;
+				max-width: 820px;
 				margin: auto;
 				padding: 1em;
 				color: rgb(var(--gray-dark));
@@ -45,19 +45,39 @@ const { title, description, heroImage } = Astro.props;
 			}
 			.title {
 				margin-bottom: 0.5em;
-				padding: 0.5em 0 0 0;
+				padding: 0.5em 1em 0 1em;
 				text-align: center;
 				line-height: 1;
+				max-width: 1040px;
+				margin-left: auto;
+				margin-right: auto;
+				box-sizing: border-box;
+			}
+			/* Utility classes for wider content */
+			.prose-wide {
+				max-width: 1040px !important;
+			}
+			.prose-full {
+				max-width: 100% !important;
+				padding-left: 2em;
+				padding-right: 2em;
 			}
 			.title h1 {
 				margin: 0 0 0.25em 0;
 				line-height: 1.1;
 				word-wrap: break-word;
+				font-size: 2.85em;
 			}
 			.title hr {
 				margin: 0.5em 0 0 0;
 			}
 			@media (max-width: 720px) {
+				.title {
+					padding: 0.5em 0.75em 0 0.75em;
+				}
+				.title h1 {
+					font-size: 2em;
+				}
 				.prose {
 					padding: 0.75em;
 				}
@@ -72,11 +92,11 @@ const { title, description, heroImage } = Astro.props;
 				<div class="hero-image">
 					{heroImage && <Image width={1020} height={510} src={heroImage} alt="" />}
 				</div>
+				<div class="title">
+					<h1>{title}</h1>
+					<hr />
+				</div>
 				<div class="prose">
-					<div class="title">
-						<h1>{title}</h1>
-						<hr />
-					</div>
 					<slot />
 				</div>
 			</article>
