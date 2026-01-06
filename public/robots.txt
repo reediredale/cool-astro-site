@@ -1,0 +1,7 @@
+# robots.txt for reediredale.com
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://reediredale.com/sitemap-index.xml
